@@ -20,6 +20,11 @@ void draw(){
       bebe.sad();
       print(cuenta);
     }
+    if(key == 'n' && cuenta > 0){
+      cuenta--;
+      bebe.sadNormal();
+      print(cuenta);
+    }
   }
   
 

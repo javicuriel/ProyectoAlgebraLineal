@@ -168,8 +168,6 @@ class Poof{
     xRightFoot -= 1;
     xLeftFoot += 1;
     
-    
-    
     pushMatrix();
     leftIris.scale(1.012);
     rightIris.scale(1.012);
@@ -183,7 +181,32 @@ class Poof{
     reflejo3.setVisible(true);
     popMatrix();
     
-
+  }
+  
+  void sadNormal(){
+    grados -= 5;
+    xRightArm += 1;
+    yRightArm -= 1;
+    
+    xLeftArm -= 1;
+    yLeftArm -= 1;
+    
+    xRightFoot += 1;
+    xLeftFoot -= 1;
+    
+    pushMatrix();
+    leftIris.scale(.988);
+    rightIris.scale(.988);
+    leftPupil.scale(.97);
+    rightPupil.scale(.97);
+    reflejo1.scale(.945);
+    reflejo2.scale(.965);
+    reflejo3.scale(.975);
+    reflejo1.setVisible(false);
+    reflejo2.setVisible(false);
+    reflejo3.setVisible(false);
+    popMatrix();
+    
   }
   
   
